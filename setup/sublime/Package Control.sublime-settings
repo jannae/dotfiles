@@ -1,0 +1,38 @@
+{
+	"installed_packages":
+	[
+		"Codeivate",
+		"CQ Clientlibs Syntax Highlight",
+		"CQ5Saver",
+		"cssDOC",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"Grunt",
+		"HTML-CSS-JS Prettify",
+		"JSHint Gutter",
+		"PyDOC",
+		"Sass",
+		"SassBeautify",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-csslint",
+		"SublimeLinter-flow",
+		"SublimeLinter-javac",
+		"SublimeLinter-jscs",
+		"SublimeLinter-jshint",
+		"SublimeLinter-jsl",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeLinter-phpcs",
+		"SublimeLinter-phplint",
+		"SublimeLinter-phpmd",
+		"SublimeLinter-pylint",
+		"SublimeLinter-ruby",
+		"SublimeLinter-xmllint",
+		"Theme - Nil",
+		"Theme - Soda"
+	]
+}
