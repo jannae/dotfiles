@@ -10,6 +10,9 @@ alias -- -="cd -"
 # i <3 u cask
 alias cask='brew cask'
 
+# Apps
+alias mou="open /Applications/Mou.app"
+
 # Shortcuts
 alias dr="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
