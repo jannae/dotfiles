@@ -4,24 +4,26 @@ This is for my personal machines, and I tend to make things up (and break them) 
 
 Now, after years of cherry-picking adding/removing tools and tweaks from my worflow, I finally see the value in open-sourcing and version controlling these files. So come in and critique my computer's underwear. It's for the best.
 
+## First, the credit.
+
+Bits and pieces come from all over. Special thanks to the major players, @mathiasbynens, @paulirish, @paulmillr, @s10wen, and @sindresorhus. 
+
 ## Set Up Files.
 
 These run once, first thing, on a clean machine. I keep them maintained as I add/remove.
 
 Set up Homebrew and add favorite binaries:
 
-    ./setup/brew.sh
+    ./setup/binaries.sh
 
 Set up [Homebrew Cask](http://caskroom.io/) and install favorite Apps:
 
-    ./setup/brew-cask.sh
+    ./setup/apps.sh
 
+Set up OSX. Almost entirely stolen from [@mathiasbynens](https://github.com/mathiasbynens) famous [.osx](https://github.com/mathiasbynens/dotfiles/blob/master/.osx).
 
+	./setup/osx.sh
 
-
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
-fi
 
 
 ## License
