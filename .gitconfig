@@ -75,6 +75,10 @@
         fi \
     }; f"
 
+    # http://blog.kfish.org/2010/04/git-lola.html
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
