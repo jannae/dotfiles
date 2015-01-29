@@ -1,3 +1,11 @@
+# /*!
+# @function updots
+# @brief Update all my dotfiles to match the repo
+# */
+function updots() {
+    cd ~/Dropbox/code/libs/dotfiles-project/dotfiles/
+    set -- -f; source bootstrap.sh
+}
 
 # /*!
 # @function calc
