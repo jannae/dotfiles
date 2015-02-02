@@ -1,0 +1,10 @@
+# set PATH to include user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+### Added for QIS (may not need to keep this) 2013.12.01
+# export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"

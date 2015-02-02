@@ -33,9 +33,6 @@ export GREP_OPTIONS="--color=auto";
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
-### Added for QIS (may not need to keep this) 2013.12.01
-export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
-
 ## Interesting way of switching java versions.
 ## src: http://superuser.com/questions/650310/switching-between-java-7-and-8-in-os-x
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
