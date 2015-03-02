@@ -6,8 +6,8 @@
 
 function doIt() {
     rsync --exclude "setup/" --exclude ".git/" --exclude ".gitignore" \
-        --exclude ".DS_Store" --exclude "bootstrap.sh" \
-        --exclude "README.md" -avh --no-perms . ~;
+        --exclude ".DS_Store" --exclude "bootstrap.sh"  \
+        --exclude ".editorconfig" --exclude "README.md" -avh --no-perms . ~;
     source ~/.bash_profile;
 }
 
