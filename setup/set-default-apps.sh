@@ -15,6 +15,8 @@ com.mouapp.Mou:markdown
 com.mouapp.Mou:md
 com.mouapp.Mou:mdwn
 com.sublimetext.3:css
+com.sublimetext.3:scss
+com.sublimetext.3:sass
 com.sublimetext.3:java
 com.sublimetext.3:js
 com.sublimetext.3:mediawiki
