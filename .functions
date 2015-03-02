@@ -3,7 +3,7 @@
 # @brief Update all my dotfiles to match the repo
 # */
 function updots() {
-    cd ~/Dropbox/code/libs/dotfiles-project/dotfiles/
+    cd ~/Code/libs/dotfiles-project/dotfiles/
     set -- -f; source bootstrap.sh
 }
 
