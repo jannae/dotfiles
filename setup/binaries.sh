@@ -53,6 +53,7 @@ mybinaries=(
     mercurial
     git
     node
+    iojs
     python
     maven
     vcprompt
