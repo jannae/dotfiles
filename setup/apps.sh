@@ -2,7 +2,8 @@
 ##
 ##  Application Installer; using [Homebrew Cask](http://caskroom.io/)
 ##
-##  Cask is an extension for Homebrew that allows you to automate the installation of Mac Apps and Fonts.
+##  Cask is an extension for Homebrew that allows you to automate the
+##  installation of Mac Apps and Fonts.
 ##
 #####
 
@@ -21,6 +22,7 @@ apps=(
     coda
     dash
     day-o
+    diffmerge
     evernote
     firefox
     firefoxdeveloperedition
