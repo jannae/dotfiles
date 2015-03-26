@@ -303,6 +303,20 @@ function v() {
 }
 
 # /*!
+# @brief Eliminates a file from git history. Returns an error message when no
+# arguments are given.
+# */
+function gitvanish() {
+    if [ $# -eq 0 ]; then
+        echo You didn't specify a file. Try again;
+    else
+        git filter-branch --force --index-filter \
+        'git rm --cached --ignore-unmatch "$@"' \
+        --prune-empty --tag-name-filter cat -- --all';
+    fi;
+}
+
+# /*!
 # @brief `o` with no arguments opens the current directory, otherwise opens the given
 # location
 # */
@@ -365,9 +379,10 @@ function extract() {
 
 # /*!
 # @brief Improved whois function
+# @discussion whois a domain or a url
 # */
 function whois() {
-    local domain=$(echo "$1" | awk -F/ '{print $3}')
+    local domain=$(echo "$1" | awk -F/ '{print $3}') # get domain from URL
     if [ -z $domain ] ; then
         domain=$1
     fi

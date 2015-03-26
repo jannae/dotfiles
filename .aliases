@@ -15,9 +15,11 @@ alias mou="open /Applications/Mou.app"
 
 # Shortcuts
 alias dr="cd ~/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias code="cd ~/Code"
+alias dots="cd ~/Code/libs/dotfiles-project/dotfiles"
 alias nyu5="cd ~/Code/cq561/nyu"
 alias nyu="cd ~/Code/aem6/nyu"
 alias sites="cd ~/Sites"
@@ -26,8 +28,11 @@ alias h="history"
 alias j="jobs"
 
 # THEEEZUS
-alias awspots="csshx -x 2 singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva"
-alias allpots="csshx -x 2 singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva homepi"
+alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva"
+alias allpots="csshx -x 2 singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva hongkong telaviv moscow london"
+alias edispots="csshx -x 2 hongkong telaviv moscow london"
+alias rtedispots="csshx -x 2 rthongkong rttelaviv rtmoscow rtlondon"
+alias dionpots="csshx -x 2 dion-singapore tokyo"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
