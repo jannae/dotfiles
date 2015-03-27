@@ -4,6 +4,7 @@
 	],
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"Base16 Color Schemes",
 		"Codeivate",
 		"Color Highlighter",
@@ -28,6 +29,7 @@
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-csslint",
 		"SublimeLinter-flow",
 		"SublimeLinter-javac",
