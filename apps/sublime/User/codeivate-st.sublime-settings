@@ -2,7 +2,7 @@
 	"dialog": false,
 	"growl_active": true,
 	"machine_name": "Sublime Text",
-	"notify_send_active": true,
+	"notify_send_active": false,
 	"notify_send_path": "/usr/bin/notify-send",
 	"pushover_active": false,
 	"pushover_user_id": "",
