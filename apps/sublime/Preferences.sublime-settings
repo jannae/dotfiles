@@ -1,6 +1,6 @@
 {
 	"auto_complete": false,
-	"color_scheme": "Packages/User/Tubnil (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Tubnil (SL).tmTheme",
 	"detect_indentation": true,
 	"draw_white_space": "all",
 	"file_exclude_patterns":
