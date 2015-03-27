@@ -1,0 +1,11 @@
+{
+	"dialog": false,
+	"growl_active": true,
+	"machine_name": "Sublime Text",
+	"notify_send_active": true,
+	"notify_send_path": "/usr/bin/notify-send",
+	"pushover_active": false,
+	"pushover_user_id": "",
+	"user_id": "f39573efc83aac0219ab6b976b32ad05d299bd77",
+	"user_token": "c9712db85c41fc434d2ec50fab436a1d5b971170"
+}

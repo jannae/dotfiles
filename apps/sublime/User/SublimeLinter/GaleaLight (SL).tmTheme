@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Allan Hortle</string>
+	<key>colorSpaceName</key>
+	<string>sRGB</string>
+	<key>name</key>
+	<string>Centurion Colors</string>
+	<key>semanticClass</key>
+	<string>theme.dark.centurion_colors</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#E6E6E6</string>
+				<key>caret</key>
+				<string>#484848</string>
+				<key>foreground</key>
+				<string>#484848</string>
+				<key>lineHighlight</key>
+				<string>#BBB</string>
+				<key>selection</key>
+				<string>#BBB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>blue, constant, keyword.other, support.constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#286c9c</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>green, string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#327f46</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ac7427</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>orange, storage, variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b14511</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>red, support, keyword.control</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#bc3d2f</string>
+			</dict>
+		</dict>
+	<dict>
+            <key>name</key>
+            <string>SublimeLinter Error</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.error</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D02000</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
+            </dict>
+        </dict></array>
+	<key>uuid</key>
+	<string>4fd09b3b-24e7-4c7a-9462-85e8f81e470c</string>
+</dict>
+</plist>
