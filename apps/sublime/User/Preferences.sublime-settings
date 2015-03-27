@@ -1,6 +1,6 @@
 {
 	"auto_complete": false,
-	"color_scheme": "Packages/User/SublimeLinter/Tubnil (SL).tmTheme",
+	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
 	"detect_indentation": true,
 	"draw_white_space": "all",
 	"file_exclude_patterns":
@@ -41,7 +41,7 @@
 	"soda_folder_icons": true,
 	"tab_completion": false,
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
