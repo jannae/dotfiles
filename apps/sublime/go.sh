@@ -17,6 +17,9 @@ cp -r Package\ Control.sublime-package ~/Library/Application\ Support/Sublime\ T
 rwq()
 
 # Link Sublime Text User Settings
-rm -rf ~/Library/Application\ Support/Sublime\ Text*/Packages/User
-ln -s User ~/Library/Application\ Support/Sublime\ Text*/Packages/
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 rwq()
+
+# setting up the sublime symlink (if not installed through cask)
+# ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
