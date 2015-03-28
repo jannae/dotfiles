@@ -73,6 +73,8 @@ mybinaries=(
     phantomjs
     slimerjs
     doxygen
+    ssh-copy-id
+    aircrack-ng
 )
 
 echo "Installing my brew binaries..."
