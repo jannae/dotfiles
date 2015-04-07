@@ -50,31 +50,56 @@ $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # Install the ongoing list of binaries that I'm into
 mybinaries=(
-    mercurial
+    ack
+    autoconf
+    automake
+    brew-cask
+    coreutils
+    csshx
+    doxygen
+    duti
+    faac
+    ffmpeg
+    freetype
+    gdbm
     git
-    node
-    iojs
-    python
-    maven
-    vcprompt
-    tig
-    imagemagick
     graphicsmagick
-    webkit2png
+    grep
+    htop-osx
+    hub
+    imagemagick
+    jpeg
+    lame
+    libgpg-error
+    libksba
+    libpng
+    libtool
+    libvo-aacenc
+    libyaml
+    mackup
+    mad
+    maven30
+    mercurial
+    node
+    openssl
+    pcre
+    phantomjs
+    pkg-config
+    python
+    readline
     rename
+    sox
+    sqlite
+    tidy
+    tig
     trash
     tree
-    ack
-    hub
-    sox
-    htop
-    mackup
     vault-cli
-    phantomjs
-    slimerjs
-    doxygen
-    ssh-copy-id
-    aircrack-ng
+    vcprompt
+    webkit2png
+    x264
+    xvid
+    xz
 )
 
 echo "Installing my brew binaries..."

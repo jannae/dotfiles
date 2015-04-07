@@ -15,11 +15,13 @@ brew tap caskroom/versions
 
 # Install the ongoing list of mac apps that I'm into
 apps=(
-    alfred
     appcleaner
-    brackets
+    bittorrent-sync
     box-sync
+    brackets
+    chromium
     coda
+    colloquy
     dash
     day-o
     diffmerge
@@ -38,19 +40,20 @@ apps=(
     markdown-service-tools
     mou
     musicbrainz-picard
+    picasa
     qlmarkdown
     qlstephen
     quicklook-json
     rescuetime
     sequel-pro
     shiori
-    spotify
     sourcetree
+    spotify
     sublime-text3
-    virtualbox
     the-unarchiver
     transmission
     transmit
+    virtualbox
     xld
 )
 
