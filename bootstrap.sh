@@ -5,9 +5,9 @@
 # git pull origin master;
 
 function doIt() {
-    rsync --exclude "apps/" --exclude "setup/" --exclude ".git/" \
+    rsync -l --exclude "apps/" --exclude "setup/" --exclude ".git/" \
         --exclude ".gitignore" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-        --exclude ".editorconfig" --exclude "README.md" -avh --no-perms . ~;
+        --exclude ".editorconfig" --exclude "README.md" -avh --no-perms . ~/Dropbox/Apps/Configs;
     source ~/.bash_profile;
 }
 
