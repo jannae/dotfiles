@@ -36,7 +36,6 @@ apps=(
     java7
     lastfm
     livereload
-    mamp
     markdown-service-tools
     mou
     musicbrainz-picard
