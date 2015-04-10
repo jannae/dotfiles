@@ -44,6 +44,16 @@ function cdf() { # short for `cdfinder`
 }
 
 # /*!
+# @function camerausedby
+# @brief Who is using the laptop's iSight camera?
+# */
+camerausedby() {
+    echo "Checking to see who is using the iSight camera… 📷"
+    usedby=$(lsof | grep -w "AppleCamera\|USBVDC\|iSight" | awk '{printf $2"\n"}' | xargs ps)
+    echo -e "Recent camera uses:\n$usedby"
+}
+
+# /*!
 # @brief Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 # */
 function targz() {
