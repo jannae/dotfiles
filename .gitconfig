@@ -141,6 +141,8 @@
 [push]
     # push easily. http://stackoverflow.com/a/23918418/89484
     default = current
+    # Make `git push` push relevant annotated tags when pushing branches out.
+    followTags = true
 
 [filter "media"]
     clean = git-media-clean %f
