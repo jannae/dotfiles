@@ -16,6 +16,7 @@ brew tap caskroom/versions
 # Install the ongoing list of mac apps that I'm into
 apps=(
     appcleaner
+    backblaze
     bittorrent-sync
     box-sync
     brackets
@@ -34,6 +35,7 @@ apps=(
     intellij-idea
     iterm2
     java7
+    lastpass
     lastfm
     livereload
     markdown-service-tools
@@ -56,14 +58,6 @@ apps=(
     xld
 )
 
-# Install the ongoing list of mac fonts that I'm into
-fonts=(
-    font-inconsolata
-    font-input
-    font-roboto
-    font-source-code-pro
-)
-
 # Old things
 # adium genymotion
 
@@ -75,8 +69,21 @@ fonts=(
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-# Link up to alfred:
-brew cask alfred link
+# Install the ongoing list of mac fonts that I'm into
+brew tap caskroom/fonts
+
+fonts=(
+    font-inconsolata
+    font-input
+    font-roboto
+    font-source-code-pro
+)
+
+echo "installing fonts..."
+brew cask install --appdir="/Applications" ${fonts[@]}
 
 # Cleanup!
 brew cask cleanup
+
+# TODO: Need some code for opening apps that require config
+#   Backblaze, iTunes, last.fm,

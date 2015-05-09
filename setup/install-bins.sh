@@ -9,6 +9,7 @@ fi
 # Update homebrew recipes
 brew update
 brew tap homebrew/dupes
+brew tap homebrew/versions
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -28,7 +29,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 #   running `chsh`.
 brew install bash
-brew install bash-completion
+brew install bash-completion2
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -62,7 +63,9 @@ mybinaries=(
     ffmpeg
     freetype
     gdbm
+    gcc
     git
+    git-lfs
     graphicsmagick
     grep
     htop-osx
@@ -105,8 +108,23 @@ mybinaries=(
 echo "Installing my brew binaries..."
 brew install ${mybinaries[@]}
 
-# Things with special configs
+# Things with special configs or prerequisites fulfilled above
 brew install casperjs --devel
+
+### Other Things
+# For [SublimeLinter-phplint](https://github.com/SublimeLinter/SublimeLinter-phplint)
+brew install homebrew/php/phplint
+
+# For [SublimeLinter-PHPCodeSniffer](https://github.com/SublimeLinter/SublimeLinter-phpcs)
+pear install PHP_CodeSniffer
+
+# For [SublimeLinter-phpmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
+pear channel-discover pear.phpmd.org
+pear channel-discover pear.pdepend.org
+pear install --alldeps phpmd/PHP_PMD
+
+# For [SublimeLinter-jsl](https://github.com/SublimeLinter/SublimeLinter-jsl)
+brew install homebrew/binary/jsl
 
 # Cleanup!
 brew cleanup
