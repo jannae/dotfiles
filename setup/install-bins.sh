@@ -87,6 +87,7 @@ mybinaries=(
     mad
     maven30
     mercurial
+    netpbm
     node
     openssl
     pcre
