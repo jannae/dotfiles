@@ -30,8 +30,8 @@ alias h="history"
 alias j="jobs"
 
 # THEEEZUS
-alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva"
-alias allpots="csshx -x 2 singapore saopaolo tokyo ireland frankfurt sydney oregon cali nva hongkong telaviv moscow london"
+alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn"
+alias allpots="csshx -x 2 singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn hongkong telaviv moscow london santiago beijing riyadh tehran"
 alias edispots="csshx -x 2 hongkong telaviv moscow london"
 alias rtedispots="csshx -x 2 rthongkong rttelaviv rtmoscow rtlondon"
 alias dionpots="csshx -x 2 dion-singapore tokyo"
