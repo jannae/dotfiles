@@ -8,6 +8,10 @@ fi
 
 # Update homebrew recipes
 brew update
+# Upgrade any already-installed formulae.
+brew upgrade --all
+
+# Tap some other kegs
 brew tap homebrew/dupes
 brew tap homebrew/versions
 
