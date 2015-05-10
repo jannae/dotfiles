@@ -9,6 +9,17 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# generic colouriser
+GRC=`which grc`
+if [ "$TERM" != dumb ] && [ -n "$GRC" ]
+    then
+        alias colourify="$GRC -es --colour=auto"
+        alias configure='colourify ./configure'
+        for app in {diff,make,gcc,g++,mtr,ping,traceroute}; do
+            alias "$app"='colourify '$app
+        done
+fi
+
 ##
 ## gotta tune that bash_history…
 ##
