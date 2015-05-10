@@ -108,6 +108,7 @@ mybinaries=(
     x264
     xvid
     xz
+    z
 )
 
 echo "Installing my brew binaries..."
