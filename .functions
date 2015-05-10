@@ -411,3 +411,10 @@ function whois() {
                                                     # strip extra fluff
     /usr/bin/whois -h whois.internic.net $domain | sed '/NOTICE:/q'
 }
+
+# `shellswitch bash`
+# `shellswitch zsh`
+shellswitch () {
+    chsh -s $(brew --prefix)/bin/$1
+}
+
