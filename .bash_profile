@@ -17,7 +17,7 @@ if [ "$TERM" != dumb ] && [ -n "$GRC" ]
         alias configure='colourify ./configure'
         for app in {diff,make,gcc,g++,mtr,ping,traceroute}; do
             alias "$app"='colourify '$app
-        done
+    done
 fi
 
 ##
@@ -29,10 +29,10 @@ export HISTTIMEFORMAT='%F %T '
 
 # keep history up to date, across sessions, in realtime
 #  http://unix.stackexchange.com/a/48113
-export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-export HISTSIZE=100000                   # big big history (default is 500)
-export HISTFILESIZE=$HISTSIZE            # big big history
-shopt -s histappend                      # append to history, don't overwrite it
+export HISTCONTROL=ignoredups:erasedups         # no duplicate entries
+export HISTSIZE=100000                          # big big history (default is 500)
+export HISTFILESIZE=$HISTSIZE                   # big big history
+which shopt > /dev/null && shopt -s histappend  # append to history, don't overwrite it
 
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
@@ -41,6 +41,11 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+# quit now if in zsh
+if [[ -n "$ZSH_VERSION" ]]; then
+    return 1 2> /dev/null || exit 1;
+fi;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
