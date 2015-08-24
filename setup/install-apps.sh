@@ -15,6 +15,7 @@ brew tap caskroom/versions
 
 # Install the ongoing list of mac apps that I'm into
 apps=(
+    adium
     appcleaner
     backblaze
     bittorrent-sync
@@ -29,6 +30,7 @@ apps=(
     evernote
     firefox
     firefoxdeveloperedition
+    fliqlo
     fluid
     google-chrome
     google-drive

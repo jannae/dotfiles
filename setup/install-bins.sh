@@ -57,6 +57,7 @@ $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 mybinaries=(
     ack
     autoconf
+    autoenv
     automake
     brew-cask
     coreutils
@@ -65,6 +66,7 @@ mybinaries=(
     duti
     faac
     ffmpeg
+    flac
     freetype
     gdbm
     gcc
@@ -87,6 +89,7 @@ mybinaries=(
     mad
     maven30
     mercurial
+    mp3gain
     netpbm
     node
     openssl
@@ -104,6 +107,7 @@ mybinaries=(
     tree
     vault-cli
     vcprompt
+    vorbisgain
     webkit2png
     x264
     xvid
@@ -139,3 +143,5 @@ brew cleanup
 pip install --upgrade setuptools
 pip install --upgrade pip
 
+# Python things
+pip install virtualenv virtualenvwrapper pylint
