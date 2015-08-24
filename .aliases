@@ -28,6 +28,7 @@ alias sites="cd ~/Sites"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias tss="cd ~/Code/tss"
 
 # THEEEZUS
 alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn"
