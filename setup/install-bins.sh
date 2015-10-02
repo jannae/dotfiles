@@ -63,6 +63,7 @@ mybinaries=(
     composer
     coreutils
     csshx
+    dark-mode
     doxygen
     duti
     faac
