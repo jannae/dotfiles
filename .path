@@ -3,8 +3,15 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Added because homebrew was complaining
+export PATH="/usr/local/sbin:$PATH"
+
 ### Added for QIS (may not need to keep this) 2013.12.01
 # export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
+
+
+# Added for Composer support
+export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"

@@ -60,6 +60,7 @@ mybinaries=(
     autoenv
     automake
     brew-cask
+    composer
     coreutils
     csshx
     doxygen
@@ -95,6 +96,7 @@ mybinaries=(
     openssl
     pcre
     phantomjs
+    phpunit
     pkg-config
     python
     readline
