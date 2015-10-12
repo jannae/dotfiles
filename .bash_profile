@@ -85,6 +85,8 @@ shopt -s nocaseglob;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
+# Adding thefuck (https://github.com/nvbn/thefuck).
+eval "$(thefuck --alias ugh)"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

@@ -104,6 +104,7 @@ mybinaries=(
     rename
     sox
     sqlite
+    thefuck
     tidy
     tig
     trash
