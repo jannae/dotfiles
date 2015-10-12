@@ -113,6 +113,7 @@ mybinaries=(
     vcprompt
     vorbisgain
     webkit2png
+    wifi-password
     x264
     xvid
     xz
@@ -129,6 +130,17 @@ brew install casperjs --devel
 # For [SublimeLinter-phplint](https://github.com/SublimeLinter/SublimeLinter-phplint)
 brew install homebrew/php/phplint
 
+# For [SublimeLinter-jsl](https://github.com/SublimeLinter/SublimeLinter-jsl)
+brew install homebrew/binary/jsl
+
+# Cleanup!
+brew cleanup
+
+
+##########################
+#   PHP things
+##########################
+
 # For [SublimeLinter-PHPCodeSniffer](https://github.com/SublimeLinter/SublimeLinter-phpcs)
 pear install PHP_CodeSniffer
 
@@ -137,15 +149,31 @@ pear channel-discover pear.phpmd.org
 pear channel-discover pear.pdepend.org
 pear install --alldeps phpmd/PHP_PMD
 
-# For [SublimeLinter-jsl](https://github.com/SublimeLinter/SublimeLinter-jsl)
-brew install homebrew/binary/jsl
 
-# Cleanup!
-brew cleanup
+##########################
+#   Python things
+##########################
 
 # things from this install:
 pip install --upgrade setuptools
 pip install --upgrade pip
 
-# Python things
-pip install virtualenv virtualenvwrapper pylint
+mypips=(
+    virtualenv
+    virtualenvwrapper
+    pylint
+)
+
+echo "Installing my brew binaries..."
+pip install ${mypips[@]}
+
+
+##########################
+#   Node things
+##########################
+mynpms=(
+    git-open
+)
+
+echo "Installing my global npm packages..."
+npm install -g ${mynpms[@]}
