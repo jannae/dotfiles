@@ -9,6 +9,9 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+#far more attractive git diffs. word-highlight and simplified header. http://i.imgur.com/uqp0MHa.png
+ln -sf "$(brew --prefix)/share/git-core/contrib/diff-highlight/diff-highlight" ~/bin/diff-highlight
+
 # generic colouriser
 GRC=`which grc`
 if [ "$TERM" != dumb ] && [ -n "$GRC" ]

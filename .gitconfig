@@ -103,6 +103,9 @@
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
 
+    # insanely beautiful diffs
+    pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
+
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
     # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
@@ -119,7 +122,7 @@
 [color]
     # Use colors in Git commands that are capable of colored output when
     # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-    ui = auto
+    ui = always
 
 [color "branch"]
     current = yellow reverse
@@ -137,6 +140,12 @@
     changed = green
     untracked = cyan
 
+[color "diff-highlight"]
+    oldNormal = "red bold"
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
+
 [diff]
     # Detect copies as well as renames
     renames = copies
@@ -153,6 +162,7 @@
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
     log = true
+    tool = opendiff
 
 [push]
     # push easily. http://stackoverflow.com/a/23918418/89484
