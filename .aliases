@@ -9,6 +9,8 @@ alias -- -="cd -"
 
 alias rm="rm -i"
 
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
 # i <3 u cask
 alias cask='brew cask'
 
