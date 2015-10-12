@@ -76,7 +76,7 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 # ls options: F = put `/` after folders, h = byte unit suffixes, color! (even with piping to awk)
-alias ls='CLICOLOR_FORCE=1 gls -aFh ${colorflag}'
+alias ls='CLICOLOR_FORCE=1 gls -aFh ${colorflag} --group-directories-first'
 
 # `cat` with beautiful colors. requires Pygments installed.
 #                              sudo easy_install Pygments
