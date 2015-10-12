@@ -104,7 +104,7 @@
     attributesfile = ~/.gitattributes
 
     # insanely beautiful diffs
-    pager = bash -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
+    pager = bash -lc 'diff-highlight | diff-so-fancy | less -r' -
 
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
@@ -131,9 +131,11 @@
 
 [color "diff"]
     meta = yellow bold
+    commit = green bold
     frag = magenta bold # line info
     old = red # deletions
     new = green # additions
+    whitespace = red reverse
 
 [color "status"]
     added = yellow
