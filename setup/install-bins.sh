@@ -15,36 +15,36 @@ brew upgrade --all
 brew tap homebrew/dupes
 brew tap homebrew/versions
 
-# Install GNU core utilities (those that come with OS X are outdated).
+# GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
-# Install some other useful utilities like `sponge`.
+# Other useful utilities like `sponge`.
 brew install moreutils
 
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+# GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 
-# Install GNU `sed`, overwriting the built-in `sed`.
+# GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 
-# Install Bash 4.
+# Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 #   running `chsh`.
 brew install bash
 brew install bash-completion2
 
-# Install `wget` with IRI support.
+# `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
+# RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
 brew install ringojs
 brew install narwhal
 
-# Install more recent versions of some OS X tools
+# more recent versions of some OS X tools
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
@@ -53,7 +53,7 @@ brew install homebrew/php/php55 --with-gmp
 
 $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
-# Install the ongoing list of binaries that I'm into
+# The ongoing list of binaries that I'm into
 mybinaries=(
     ack
     autoconf
@@ -74,6 +74,7 @@ mybinaries=(
     gcc
     git
     git-lfs
+    gh                  # github util. imho better than hub
     graphicsmagick
     grep
     htop-osx
@@ -92,18 +93,21 @@ mybinaries=(
     maven30
     mercurial
     mp3gain
+    mtr                 # mtr - ping & traceroute. best.
     netpbm
     node
     openssl
     pcre
     phantomjs
     phpunit
+    pidcat              # colored logcats
     pkg-config
     python
     readline
     rename
     sox
     sqlite
+    terminal-notifier
     thefuck
     tidy
     tig
@@ -118,6 +122,7 @@ mybinaries=(
     xvid
     xz
     z
+    zsh
 )
 
 echo "Installing my brew binaries..."
