@@ -27,7 +27,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
 # here's LS_COLORS
 # github.com/trapd00r/LS_COLORS
-eval $(gdircolors -b ~/.dircolors)
+command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
+eval "$(gdircolors -b ~/.dircolors)"
 
 ## Interesting way of switching java versions.
 ## src: http://superuser.com/questions/650310/switching-between-java-7-and-8-in-os-x

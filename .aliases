@@ -40,10 +40,10 @@ alias dionpots="csshx -x 2 dion-singapore tokyo"
 #### LS THINGS
 
 # use coreutils `ls` if possible…
-[ $(which gls) > /dev/null ] && lscmd="gls" || lscmd="ls"
+command -v gls >/dev/null 2>&1 || alias gls="ls"
 
 # Detect which `ls` flavor is in use
-if $lscmd --color > /dev/null 2>&1; then # GNU `ls`
+if gls --color > /dev/null 2>&1; then # GNU `ls`
     colorflag="--color"
 else # OS X `ls`
     colorflag="-G"
@@ -74,7 +74,7 @@ alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 # ls options: F = put `/` after folders, h = byte unit suffixes, color! (even with piping to awk)
-alias ls='CLICOLOR_FORCE=1 $lscmd -aFh ${colorflag}'
+alias ls='CLICOLOR_FORCE=1 gls -aFh ${colorflag}'
 
 # `cat` with beautiful colors. requires Pygments installed.
 #                              sudo easy_install Pygments
