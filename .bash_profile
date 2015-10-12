@@ -17,7 +17,7 @@ if [ "$TERM" != dumb ] && [ -n "$GRC" ]
         alias configure='colourify ./configure'
         for app in {diff,make,gcc,g++,mtr,ping,traceroute}; do
             alias "$app"='colourify '$app
-    done
+        done
 fi
 
 ##
