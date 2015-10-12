@@ -53,14 +53,14 @@ fi
 alias ll='ls -lah'
 
 # List ALL files (colorized() in long format, show permissions in octal
-alias lac="ls -la | awk '
+alias lac="ls -l | awk '
 {
   k=0;
   for (i=0;i<=8;i++)
     k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));
   if (k)
     printf(\"%0o \",k);
-  print
+  printf(\" %9s  %3s %2s %5s  %6s  %3s\n\", \$3, \$6, \$7, \$8, \$5, \$9);
 }'"
 
 # List all files colorized in long format
