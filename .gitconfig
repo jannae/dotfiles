@@ -35,6 +35,15 @@
     branches = branch -a
     remotes = remote -v
 
+    # Diff with color
+    df = diff --color --color-words --abbrev
+
+    # Git Log pretty
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+    # I don't even know how I didn't already have this
+    co = checkout
+
     # Amend the currently staged files to the latest commit
     amend = commit --amend --reuse-message=HEAD
 
