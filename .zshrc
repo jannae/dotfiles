@@ -16,9 +16,6 @@ fpath=( "$HOME/.zfunctions" $fpath )
 # antigen time!
 source ~/code/antigen/antigen.zsh
 
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
-
 
 local b="antigen-bundle"
 
@@ -36,7 +33,7 @@ $b brew
 $b brew-cask
 
 # Tracks your most used directories, based on 'frecency'.
-$b z
+$b robbyrussell/oh-my-zsh plugins/z
 
 # suggestion as you type
 $b tarruda/zsh-autosuggestions
