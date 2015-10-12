@@ -131,6 +131,11 @@ brew install ${mybinaries[@]}
 # Things with special configs or prerequisites fulfilled above
 brew install casperjs --devel
 
+# allow mtr to run without sudo
+mtrlocation=$(brew info mtr | grep Cellar | sed -e 's/ (.*//') #  e.g. `/Users/jannae/.homebrew/Cellar/mtr/0.86`
+sudo chmod 4755 $mtrlocation/sbin/mtr
+sudo chown root $mtrlocation/sbin/mtr
+
 ### Other Things
 # For [SublimeLinter-phplint](https://github.com/SublimeLinter/SublimeLinter-phplint)
 brew install homebrew/php/phplint
