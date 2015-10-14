@@ -3,6 +3,9 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# Git Friendly
+export PATH="$PATH:$HOME/bin/git-friendly"
+
 # Added because homebrew was complaining
 export PATH="/usr/local/sbin:$PATH"
 
