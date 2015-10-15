@@ -28,10 +28,15 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13.0,
+	"font_size": 14.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Better CoffeeScript",
+		"DashDoc",
+		"Dockerfile Syntax Highlighting",
+		"Jade",
+		"Jekyll",
 		"Vintage"
 	],
 	"rulers":

@@ -26,6 +26,12 @@ else
 fi;
 unset doIt;
 
+# Gonna backup my sublime settings here when I update my dots.
+
+\rm -rf ./apps/sublime/User/*
+\cp -rf $syncdir/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/*.sublime-settings ./apps/sublime/User/
+
+
 ######################################
 # Post Updots Things
 ######################################
