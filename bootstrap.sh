@@ -25,3 +25,41 @@ else
     fi;
 fi;
 unset doIt;
+
+######################################
+# Post Updots Things
+######################################
+
+# I wrote the below crappy little script to check to see if there are any
+# files in my repo that I've forgotten to add to my mackup config files.
+#
+# It could maybe be better.
+
+# Files in the sync directory we can ignore
+ignore=(. .. .DS_Store .MacOSX Library )
+
+# Files I know are already in my custom mackup config
+localcfg=( bin .bash_prompt .dircolors .eslintrc .exports .extra .functions \
+    .hushlogin .path .mackup .mackup.cfg )
+
+# Files I know mackup is already accounting for
+mackup=( .aws .aliases .bash_aliases .bash_login .bash_logout .bashrc \
+    .profile .bash_profile .inputrc .chef .config .gemrc .gitconfig \
+    .gitattributes .gitignore_global .gvimrc .hgrc .hgignore_global .htoprc \
+    .i2csshrc .irssi .m2 .netrc .curlrc .pearrc .ssh .subversion .vim .vimrc \
+    .zlogin .zprofile .zshrc .gnupg )
+
+# ALL THE THINGS
+allfiles=( "${ignore[@]}" "${localcfg[@]}" "${mackup[@]}" )
+
+contains () {
+  local e
+  for e in "${@:2}"; do [[ "$e" == "$1" ]] && return 0; done
+  return 1
+}
+
+for f in $syncdir/*; do
+    file=${f##*/}
+    contains "$file" "${allfiles[@]}"
+    test "$?" == 1 && (echo ${f##*/};)
+done
