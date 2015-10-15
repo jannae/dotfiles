@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 #####
 ##
 ##  Application Installer; using [Homebrew Cask](http://caskroom.io/)

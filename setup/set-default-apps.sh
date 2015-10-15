@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #========================================================================
 #  FILE:  set_default_apps.sh
@@ -8,6 +8,7 @@
 #  VERSION:  0.1
 #  CREATED:  09/17/2012 21:44:01 CDT
 #  REVISION:
+#  SOURCE: http://www.chainsawonatireswing.com/2012/09/19/changing-default-applications-on-a-mac-using-the-command-line-then-a-shell-script
 #========================================================================
 
 { cat <<eof
@@ -17,6 +18,7 @@ com.mouapp.Mou:mdwn
 com.sublimetext.3:css
 com.sublimetext.3:scss
 com.sublimetext.3:sass
+com.sublimetext.3:less
 com.sublimetext.3:java
 com.sublimetext.3:js
 com.sublimetext.3:mediawiki
@@ -24,6 +26,8 @@ com.sublimetext.3:mf
 com.sublimetext.3:properties
 com.sublimetext.3:sh
 com.sublimetext.3:text
+com.sublimetext.3:php
+com.sublimetext.3:py
 com.sublimetext.3:txt
 com.sublimetext.3:xml
 cx.c3.theunarchiver:gz
@@ -35,7 +39,7 @@ cx.c3.theunarchiver:zip
 eof
 } | grep . |
 while IFS=$':' read bundle_id extension ; do
-  # Grep to see if Bundle ID exists, sending stdout to /dev/null
+  # Grep to see if Bundle ID exists
   /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -dump | grep $bundle_id > /dev/null
   # Save exit status (0=success & 1=failure)
   status=$?
@@ -44,9 +48,9 @@ while IFS=$':' read bundle_id extension ; do
     echo "$bundle_id doesn't exist! Fix the script!"
     exit
   else
-    echo -e "\nChanging $extension so it opens with $bundle_id …\n"
+    echo -e "\nChanging $extension so it opens with $bundle_id ...\n"
     duti -s $bundle_id .$extension all
-    echo -e "Here's proof…\n"
+    echo -e "Here's proof...\n"
     duti -x $extension
     echo -e "\n----------"
   fi

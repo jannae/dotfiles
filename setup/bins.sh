@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ##################################
 ### XCode Command Line Tools
 #      thx  https://github.com/alrra/dotfiles/blob/c2da74cc333/os/os_x/install_applications.sh#L39
