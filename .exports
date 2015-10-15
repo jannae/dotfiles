@@ -44,3 +44,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # For Docbook, a moreutils dependency
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+
+# SlimerJS
+export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
