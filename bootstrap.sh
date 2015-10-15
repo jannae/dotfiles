@@ -4,10 +4,14 @@
 
 # git pull origin master;
 
+# Where I keep my configs, because Mackup.
+syncdir="$HOME/Dropbox/Apps/Configs"
+
 function doIt() {
     rsync -l --exclude "apps/" --exclude "setup/" --exclude ".git/" \
-        --exclude ".gitignore" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-        --exclude ".editorconfig" --exclude "README.md" -avh --no-perms . ~/Dropbox/Apps/Configs;
+        --exclude ".gitignore" --exclude ".gitmodules" --exclude ".DS_Store" \
+        --exclude "bootstrap.sh" --exclude ".editorconfig" \
+        --exclude "README.md" -avh --no-perms . $syncdir;
     source ~/.bash_profile;
 }
 
