@@ -32,11 +32,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Better CoffeeScript",
-		"DashDoc",
-		"Dockerfile Syntax Highlighting",
-		"Jade",
-		"Jekyll",
 		"Vintage"
 	],
 	"rulers":
