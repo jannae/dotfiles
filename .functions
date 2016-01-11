@@ -453,8 +453,8 @@ rule () {
 }
 
 
-# `shellswitch bash`
-# `shellswitch zsh`
+# `shellswitch [bash |zsh]`
+#   Must be in /etc/shells
 shellswitch () {
     chsh -s $(brew --prefix)/bin/$1
 }
