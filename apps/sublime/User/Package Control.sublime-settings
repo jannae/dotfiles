@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Anaconda",
 		"ApplySyntax",
 		"Base16 Color Schemes",
 		"Bash Build System",
@@ -19,11 +20,13 @@
 		"EditorConfig",
 		"Git",
 		"GitGutter",
+		"Google Spell Check",
 		"Grunt",
 		"HTML-CSS-JS Prettify",
 		"Jade",
 		"Jekyll",
 		"JSHint Gutter",
+		"LineEndings",
 		"Logstash Syntax Highlighting",
 		"Markdown Preview",
 		"Mercurial",

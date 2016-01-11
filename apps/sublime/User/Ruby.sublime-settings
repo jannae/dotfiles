@@ -1,13 +1,13 @@
 {
 	"extensions":
 	[
-		"rake",
-		"simplecov",
 		"jbuilder",
-		"rb",
 		"thor",
-		"ruby.rails",
 		"podspec",
+		"rb",
+		"simplecov",
+		"rake",
+		"ruby.rails",
 		"rabl"
 	]
 }

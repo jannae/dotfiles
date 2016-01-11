@@ -12,6 +12,7 @@
 		".vlt-sync.log"
 	],
 	"find_selected_text": "true",
+	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
 		"_ref",
@@ -34,6 +35,12 @@
 	[
 		"Vintage"
 	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_numbers": true,
 	"rulers":
 	[
 		79
