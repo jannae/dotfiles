@@ -79,6 +79,7 @@ brew install gnu-sed --with-default-names
 #   running `chsh`.
 brew install bash
 brew install bash-completion2
+brew install homebrew/completions/brew-cask-completion
 
 # `wget` with IRI support.
 brew install wget --with-iri
@@ -246,6 +247,7 @@ pip install ${mypys[@]}
 
 mynpms=(
     git-open
+    trash-cli
 )
 
 echo "Installing my global npm packages..."
