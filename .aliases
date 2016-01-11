@@ -17,7 +17,7 @@ alias cask='brew cask'
 # Apps
 alias mou="open /Applications/Mou.app"
 
-# Shortcuts
+# File Shortcuts
 alias dr="cd ~/Dropbox"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
@@ -27,10 +27,13 @@ alias dots="cd ~/Code/libs/dotfiles-project/dotfiles"
 alias nyu5="cd ~/Code/cq561/nyu"
 alias nyu="cd ~/Code/aem6/nyu"
 alias sites="cd ~/Sites"
+alias tss="cd ~/Code/tss"
+
+# App Aliases
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias tss="cd ~/Code/tss"
+alias ungz="gunzip -k"
 
 # THEEEZUS
 alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn"
@@ -102,13 +105,13 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
-# IP addresses
+# Networking. IP address, dig, DNS
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias dig="dig +nocmd any +multiline +noall +answer"
+
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -135,7 +138,7 @@ unset jscbin;
 alias c="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias rmdsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
