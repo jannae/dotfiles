@@ -153,6 +153,7 @@ mybinaries=(
     python
     readline
     rename
+    sift                # sift is faster than grep, ack, or ag
     sox
     sqlite
     terminal-notifier
