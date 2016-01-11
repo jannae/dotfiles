@@ -109,11 +109,13 @@ mybinaries=(
     coreutils
     csshx
     dark-mode
+    dos2unix            # Handy Dandy for working with files across platforms
     doxygen
     duti
     faac
     ffmpeg
     flac
+    flow                # for sublimelinter-flow / js static type checker <http://flowtype.org/>
     freetype
     gdbm
     gcc
@@ -126,6 +128,7 @@ mybinaries=(
     hub
     imagemagick
     jpeg
+    jq                  # handy dandy cmd line json processor
     lame
     libgpg-error
     libksba

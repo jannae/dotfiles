@@ -18,22 +18,18 @@ brew tap caskroom/versions
 # Install the ongoing list of mac apps that I'm into
 apps=(
     adium
-    appcleaner
     backblaze
+    betterzipql
     bittorrent-sync
     box-sync
-    brackets
-    chromium
     coda
     colloquy
-    dash
     day-o
     diffmerge
     evernote
     firefox
     firefoxdeveloperedition
     fliqlo
-    fluid
     google-chrome
     google-drive
     intellij-idea
@@ -41,13 +37,16 @@ apps=(
     java7
     lastpass
     lastfm
-    livereload
     markdown-service-tools
     mou
     musicbrainz-picard
     picasa
+    qlcolorcode
+    qlimagesize
     qlmarkdown
+    qlprettypatch
     qlstephen
+    quicklook-csv
     quicklook-json
     rescuetime
     sequel-pro
@@ -55,18 +54,16 @@ apps=(
     sourcetree
     spotify
     sublime-text3
+    suspicious-package
     the-unarchiver
     transmission
-    transmit
     virtualbox
+    webpquicklook
     xld
 )
 
-# Old things
-# adium genymotion
-
 # Casks for apps I'm on the fence about:
-# fence=( adium
+# fence=(
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
@@ -89,5 +86,5 @@ brew cask install --appdir="/Applications" ${fonts[@]}
 # Cleanup!
 brew cask cleanup
 
-# TODO: Need some code for opening apps that require config
+# TODO: Need some code for opening apps that require GUI config
 #   Backblaze, iTunes, last.fm,

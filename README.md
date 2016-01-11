@@ -6,7 +6,7 @@ Now, after years of cherry-picking adding/removing tools and tweaks from my worf
 
 ## First, the credit.
 
-Bits and pieces come from all over. Special thanks to the major players, @mathiasbynens, @paulirish, @paulmillr, @s10wen, and @sindresorhus. 
+Bits and pieces come from all over. Special thanks to the major players, @mathiasbynens, @paulirish, @paulmillr, @s10wen, and @sindresorhus.
 
 ## Set Up Files.
 
@@ -14,16 +14,26 @@ These run once, first thing, on a clean machine. I keep them maintained as I add
 
 Set up Homebrew and add favorite binaries:
 
-    ./setup/binaries.sh
+    ./setup/bins.sh
 
 Set up [Homebrew Cask](http://caskroom.io/) and install favorite Apps:
 
-    ./setup/apps.sh
+    ./setup/cask-apps.sh
 
 Set up OSX. Almost entirely stolen from [@mathiasbynens](https://github.com/mathiasbynens) famous [.osx](https://github.com/mathiasbynens/dotfiles/blob/master/.osx).
 
-	./setup/osx.sh
+    ./setup/osx.sh
 
+Notes:
+
+What are inside these directories?!
+
+### `~/bin`
+
+One-off binaries that aren't via an npm global or homebrew.
+    * [git-friendly](https://github.com/jamiew/git-friendly)
+    * [git-overwritten](https://github.com/mislav/dotfiles/blob/master/bin/git-overwritten)
+    * [httpcompression](https://github.com/mathiasbynens/dotfiles/blob/master/bin/httpcompression)
 
 
 ## License
