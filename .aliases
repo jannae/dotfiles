@@ -8,9 +8,9 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # mv, rm, cp
-alias mv='mv -v'
-alias rm='rm -i -v'
-alias cp='cp -v'
+alias mv 'command gmv --interactive --verbose'
+alias rm 'command grm --interactive --verbose'
+alias cp 'command gcp --interactive --verbose'
 
 # i <3 u cask
 alias cask='brew cask'
