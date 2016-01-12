@@ -37,6 +37,12 @@ alias j="jobs"
 alias ungz="gunzip -k"
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # THEEEZUS
 alias awspots="csshx -x 2 singapore dion-singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn"
 alias allpots="csshx -x 2 singapore saopaolo tokyo dublin frankfurt sydney portland paloalto ashburn hongkong telaviv moscow london santiago beijing riyadh tehran"
