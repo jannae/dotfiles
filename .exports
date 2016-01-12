@@ -6,6 +6,9 @@ export NODE_REPL_HISTORY=~/.node_history;
 # Allow 32³ entries; the default is 1000.
 export NODE_REPL_MODE='sloppy';
 
+# Make Python use UTF-8 encoding for output to stdin, stdout, and stderr.
+export PYTHONIOENCODING='UTF-8';
+
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
 
