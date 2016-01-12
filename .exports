@@ -2,9 +2,9 @@
 export EDITOR="vim";
 
 # Enable persistent REPL history for `node`.
-export NODE_REPL_HISTORY_FILE=~/.node_history;
+export NODE_REPL_HISTORY=~/.node_history;
 # Allow 32³ entries; the default is 1000.
-export NODE_REPL_HISTORY_SIZE='32768';
+export NODE_REPL_MODE='sloppy';
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help";
