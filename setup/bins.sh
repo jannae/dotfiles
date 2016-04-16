@@ -144,6 +144,7 @@ mybinaries=(
     mtr                 # mtr - ping & traceroute. best.
     mvnvm
     netpbm
+    nmap
     node
     openssl
     pcre
@@ -235,9 +236,10 @@ mypys=(
     virtualenv
     virtualenvwrapper
     pylint
+    python-nmap
 )
 
-echo "Installing my brew binaries..."
+echo "Installing my python things..."
 pip install ${mypys[@]}
 
 

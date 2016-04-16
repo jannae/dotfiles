@@ -42,6 +42,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Code
 source /usr/local/bin/virtualenvwrapper.sh
 
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # For Docbook, a moreutils dependency
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 

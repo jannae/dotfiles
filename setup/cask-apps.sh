@@ -60,6 +60,10 @@ apps=(
     virtualbox
     webpquicklook
     xld
+
+    # Hacker tools
+    hex-fiend
+    0xed
 )
 
 # Casks for apps I'm on the fence about:
