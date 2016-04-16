@@ -2,7 +2,7 @@
 	"extensions":
 	[
 		"py3",
-		"pyw",
-		"pt"
+		"pt",
+		"pyw"
 	]
 }

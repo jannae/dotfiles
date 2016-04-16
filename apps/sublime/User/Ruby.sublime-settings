@@ -3,11 +3,11 @@
 	[
 		"jbuilder",
 		"thor",
-		"podspec",
 		"rb",
 		"simplecov",
 		"rake",
+		"rabl",
 		"ruby.rails",
-		"rabl"
+		"podspec"
 	]
 }

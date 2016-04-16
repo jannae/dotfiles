@@ -18,6 +18,8 @@
 		"_ref",
 		".bundle",
 		".git",
+		".hg",
+		".hgcheck",
 		".sass-cache",
 		"_site",
 		".idea",
