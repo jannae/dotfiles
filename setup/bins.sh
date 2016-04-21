@@ -102,6 +102,7 @@ $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 # The ongoing list of binaries that I'm into
 mybinaries=(
     ack
+    ag                  # Code-search similar to ack
     autoconf
     autoenv
     automake

@@ -37,6 +37,8 @@ alias j="jobs"
 alias ungz="gunzip -k"
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
+alias ag='ag -W 200 -f --hidden'
+
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
