@@ -21,8 +21,8 @@ apps=(
     backblaze
     betterzipql
     bittorrent-sync
-    box-sync
-    coda
+    # box-sync
+    # coda
     colloquy
     day-o
     diffmerge
@@ -34,7 +34,7 @@ apps=(
     google-drive
     intellij-idea
     iterm2
-    java7
+    # java7
     lastpass
     lastfm
     markdown-service-tools
@@ -66,8 +66,6 @@ apps=(
     0xed
 )
 
-# Casks for apps I'm on the fence about:
-# fence=(
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications

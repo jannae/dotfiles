@@ -87,8 +87,8 @@ brew install wget --with-iri
 # RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+# brew install ringojs
+# brew install narwhal
 
 # more recent versions of some OS X tools
 brew install vim --override-system-vi
@@ -151,7 +151,7 @@ mybinaries=(
     node
     openssl
     pcre
-    phantomjs
+    # phantomjs
     phpunit
     pidcat              # colored logcats
     pkg-config
@@ -183,7 +183,7 @@ echo "Installing my brew binaries..."
 brew install ${mybinaries[@]}
 
 # Things with special configs or prerequisites fulfilled above
-brew install casperjs --devel
+# brew install casperjs --devel
 
 # allow mtr to run without sudo
 mtrlocation=$(brew info mtr | grep Cellar | sed -e 's/ (.*//') #  e.g. `/Users/jannae/.homebrew/Cellar/mtr/0.86`
@@ -253,6 +253,7 @@ pip install ${mypys[@]}
 mynpms=(
     git-open
     trash-cli
+
 )
 
 echo "Installing my global npm packages..."

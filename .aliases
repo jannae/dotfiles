@@ -35,7 +35,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias ungz="gunzip -k"
-alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias hosts='sudo $EDITOR /etc/hosts'
 
 alias ag='ag -W 200 -f --hidden'
 
