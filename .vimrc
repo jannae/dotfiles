@@ -104,3 +104,6 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" Homebrew caveat to use fzf in VIM
+set rtp+=/usr/local/opt/fzf

@@ -120,6 +120,7 @@ mybinaries=(
     flac
     flow                # for sublimelinter-flow / js static type checker <http://flowtype.org/>
     freetype
+    fzf                 # Fuzzy finder written in Go
     gdbm
     gcc
     git
