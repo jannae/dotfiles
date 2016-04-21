@@ -44,9 +44,6 @@
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
 
-    # insanely beautiful diffs
-    pager = diff-highlight | diff-so-fancy | less -r
-
     # Treat spaces before tabs and all kinds of trailing whitespace as an error
     # [default] trailing-space: looks for spaces at the end of a line
     # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
@@ -59,6 +56,11 @@
     editor = subl -n -w
     filemode = false
     autocrlf = input
+
+[pager]
+    # insanely beautiful diffs ==> brew install diff-so-fancy
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
 
 [color]
     # Use colors in Git commands that are capable of colored output when
@@ -127,13 +129,16 @@
 [help]
     autocorrect = 1
 
-# push easily. http://stackoverflow.com/a/23918418/89484
-[push]
-    default = current
-
 # use separate file for username / github token / etc
 [include]
     path = ~/.gitconfig.local
 
 [init]
     templatedir = ~/.git_template
+
+
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+
