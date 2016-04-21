@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 # /*!
 # @function updots
 # @brief Update all my dotfiles to match the repo
