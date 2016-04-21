@@ -110,6 +110,7 @@ mybinaries=(
     coreutils
     csshx
     dark-mode
+    diff-so-fancy
     dos2unix            # Handy Dandy for working with files across platforms
     doxygen
     duti
