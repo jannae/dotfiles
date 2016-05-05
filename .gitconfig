@@ -57,6 +57,11 @@
     filemode = false
     autocrlf = input
 
+[diff "bin"]
+
+    # Use `hexdump` to diff binary files
+    textconv = hexdump -v -C
+
 [pager]
     # insanely beautiful diffs ==> brew install diff-so-fancy
     diff = diff-so-fancy | less --tabs=4 -RFX
