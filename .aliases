@@ -28,8 +28,6 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias code="cd ~/Code"
 alias dots="cd ~/Code/libs/dotfiles-project/dotfiles"
-alias nyu5="cd ~/Code/cq561/nyu"
-alias nyu="cd ~/Code/aem6/nyu"
 alias sites="cd ~/Sites"
 alias tss="cd ~/Code/tss"
 
@@ -100,8 +98,9 @@ alias week='date +%V'
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+# Don't Get OS X Software Updates, I don't think I want this. `sudo softwareupdate -i -a;` if I decide to add it back
+# Update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Just brew, yo
 alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
