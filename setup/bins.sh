@@ -253,7 +253,7 @@ pip install ${mypys[@]}
 mynpms=(
     git-open
     trash-cli
-
+    npm-check
 )
 
 echo "Installing my global npm packages..."
