@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Default Sublime Text Location
-#SUBLIME_PATH="/Applications
-SUBLIME_PATH="/opt/homebrew-cask/Caskroom/sublime-text3/Build 3083"
+SUBLIME_PATH="/Applications"
+# SUBLIME_PATH="/opt/homebrew-cask/Caskroom/sublime-text3/Build 3083"
 SUBLIME_NAME="Sublime Text.app"
 NEW_ICON_PATH="icons/Sublime Text.icns"
 
