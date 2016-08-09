@@ -493,4 +493,10 @@ colors(){
     echo
 }
 
-
+# /*!
+# @brief preview csv files.
+# @discussion source: http://stackoverflow.com/questions/1875305/command-line-csv-viewer
+# */
+function csvpreview(){
+      sed 's/,,/, ,/g;s/,,/, ,/g' "$@" | column -s, -t | less -#2 -N -S
+}
