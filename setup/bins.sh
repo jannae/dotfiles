@@ -247,11 +247,13 @@ pip install ${mypys[@]}
 
 
 ##########################
-#   Node things
+#   NPM things
 ##########################
 
 mynpms=(
+    diff-so-fancy
     git-open
+    git-recent
     trash-cli
     npm-check
 )
