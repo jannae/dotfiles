@@ -1,8 +1,8 @@
 {
 	"extensions":
 	[
-		"py3",
 		"pt",
-		"pyw"
+		"pyw",
+		"py3"
 	]
 }
