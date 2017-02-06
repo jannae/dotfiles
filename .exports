@@ -61,3 +61,6 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 # SlimerJS
 export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
+
+# AndroidSDK
+export ANDROID_HOME=/usr/local/opt/android-sdk
