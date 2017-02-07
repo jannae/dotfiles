@@ -171,7 +171,7 @@ function gitio() {
         echo "Usage: \`gitio slug url\`";
         return 1;
     fi;
-    curl -i http://git.io/ -F "url=${2}" -F "code=${1}";
+    curl -i https://git.io/ -F "url=${2}" -F "code=${1}";
 }
 
 # /*!
