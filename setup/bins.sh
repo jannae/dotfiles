@@ -125,7 +125,6 @@ mybinaries=(
     gcc
     git
     git-lfs
-    gh                  # github util. imho better than hub
     graphicsmagick
     grep
     htop-osx
