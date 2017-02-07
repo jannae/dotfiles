@@ -161,6 +161,7 @@ mybinaries=(
     sox
     sqlite
     terminal-notifier
+    testssl             # Tool which checks for the support of TLS/SSL ciphers and flaws
     thefuck
     tidy-html5          # tidy > tidy-html5 <https://github.com/Homebrew/homebrew/pull/39010>
     tig
