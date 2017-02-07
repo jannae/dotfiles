@@ -92,7 +92,9 @@ complete -W "NSGlobalDomain" defaults;
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
-source "$(brew --prefix)/etc/profile.d/z.sh"
+# z beats cd most of the time. `brew install z`
+zpath="$(brew --prefix)/etc/profile.d/z.sh"
+[ -s $zpath ] && source $zpath
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
