@@ -95,7 +95,7 @@ brew install vim --with-override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 brew install homebrew/dupes/tidy
-brew install homebrew/php/php55 --with-gmp
+brew install homebrew/php/php56 --with-gmp
 
 $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
