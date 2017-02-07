@@ -158,6 +158,7 @@ mybinaries=(
     readline
     rename
     sift                # sift is faster than grep, ack, or ag
+    shellcheck          # Static analysis and lint tool, for (ba)sh scripts
     sox
     sqlite
     terminal-notifier
