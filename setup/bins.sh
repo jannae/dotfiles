@@ -168,7 +168,7 @@ mybinaries=(
     tig
     trash
     tree
-    vault-cli
+    vbindiff            # Visual Binary Diff tool
     vcprompt
     vorbisgain
     webkit2png
