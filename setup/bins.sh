@@ -127,6 +127,7 @@ mybinaries=(
     git-lfs
     graphicsmagick
     grep
+    gpg                 # GNU Privacy Guard: a free PGP replacement
     htop-osx
     hub
     imagemagick
@@ -267,10 +268,10 @@ npm install -g ${mynpms[@]}
 ##########################
 
 # Install rvm
-\curl -sSL https://get.rvm.io | bash -s -- --ignore-dotfiles
+\curl -sSL https://get.rvm.io | bash -s stable --ruby --ignore-dotfiles
 
 # rvm install ruby-head
-rvm install 2.2; rvm use 2.2 --default
+rvm install ruby-head; rvm use ruby-head --default
 
 # test install
 ruby -v; which ruby
