@@ -97,8 +97,6 @@ brew install homebrew/dupes/screen
 brew install homebrew/dupes/tidy
 brew install homebrew/php/php56 --with-gmp
 
-$PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
-
 # The ongoing list of binaries that I'm into
 mybinaries=(
     ack
