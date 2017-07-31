@@ -1,25 +1,21 @@
 #!/usr/bin/env bash
 
-# set PATH to include user's private bin if it exists
+# Added to prefer homebrew bins over system
+export PATH="/usr/local/sbin:$PATH"
+
+# Include user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Git Friendly
-export PATH="$PATH:$HOME/bin/git-friendly"
-
-# Added because homebrew was complaining
-export PATH="/usr/local/sbin:$PATH"
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
 
 ### Added for QIS (may not need to keep this) 2013.12.01
 # export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 
-
 # Added for Composer support
-export PATH="$PATH:$HOME/.composer/vendor/bin"
-
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # For Go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin

@@ -35,7 +35,8 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER="less -X";
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+# This has finally been corrected!
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
 # here's LS_COLORS
 # github.com/trapd00r/LS_COLORS
@@ -49,7 +50,7 @@ setjdk() {
   export JAVA_HOME=$(/usr/libexec/java_home -v $1)
 }
 
-#Python virtualenvs (http://virtualenvwrapper.readthedocs.org/en/latest/install.html)
+# Python virtualenvs (http://virtualenvwrapper.readthedocs.org/en/latest/install.html)
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Code
 source /usr/local/bin/virtualenvwrapper.sh
@@ -58,9 +59,3 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 
 # For Docbook, a moreutils dependency
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
-
-# SlimerJS
-export SLIMERJSLAUNCHER=/Applications/Firefox.app/Contents/MacOS/firefox
-
-# AndroidSDK
-export ANDROID_HOME=/usr/local/opt/android-sdk
