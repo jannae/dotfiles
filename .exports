@@ -45,10 +45,10 @@ eval "$(gdircolors -b ~/.dircolors)"
 
 ## Interesting way of switching java versions.
 ## src: http://superuser.com/questions/650310/switching-between-java-7-and-8-in-os-x
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-setjdk() {
-  export JAVA_HOME=$(/usr/libexec/java_home -v $1)
-}
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+# setjdk() {
+#   export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+# }
 
 # Python virtualenvs (http://virtualenvwrapper.readthedocs.org/en/latest/install.html)
 export WORKON_HOME=$HOME/.virtualenvs
