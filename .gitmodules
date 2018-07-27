@@ -1,3 +1,0 @@
-[submodule "bin/git-friendly"]
-	path = bin/git-friendly
-	url = https://github.com/jamiew/git-friendly.git
