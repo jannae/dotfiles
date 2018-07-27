@@ -21,11 +21,13 @@
 		".hg",
 		".hgcheck",
 		".sass-cache",
-		"_site",
 		".idea",
 		".settings",
 		"builtAssets",
-		"target"
+		"target",
+		"env",
+		"venv",
+		"node_modules"
 	],
 	"font_options":
 	[
@@ -35,6 +37,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"SublimeLinter-contrib-puppet-lint",
 		"Vintage"
 	],
 	"indent_guide_options":
