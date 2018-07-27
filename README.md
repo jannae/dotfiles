@@ -24,17 +24,38 @@ Set up OSX. Almost entirely stolen from [@mathiasbynens](https://github.com/math
 
     ./setup/osx.sh
 
-Notes:
+Now there are two ways of doing dotfiles. I am a giant fan of [Mackup](https://github.com/lra/mackup), so I use that. There is also a `bootstrap.sh` file if you do not use/want to use mackup.
+
+### Mackup
+
+Definitely read the docs if you have never used this before. I **highly** recommend it if you use multiple machines and enjoy being able to find things where you last left them.
+
+    cp -r .mackup* ~/
+    mackup restore
+
+You'll be prompted for file replacements, I just type Yes a bunch. You may be more cautious than I am.
+
+### Not Mackup
+
+I haven't done this in awhile, but the idea is that you simply run `bootstrap.sh` to copy all the dotfiles in this repo to their appropriate locations. You probably want to vet that file before you use it, since I've been on mackup so long. But once upon a time, it worked great.
+
+
+## Some Notes:
 
 What are inside these directories?!
 
 ### `~/bin`
 
-One-off binaries that aren't via an npm global or homebrew.
-    * [git-friendly](https://github.com/jamiew/git-friendly)
-    * [git-overwritten](https://github.com/mislav/dotfiles/blob/master/bin/git-overwritten)
-    * [httpcompression](https://github.com/mathiasbynens/dotfiles/blob/master/bin/httpcompression)
+One-off binaries that aren't available via a friendly/package management means.
+* [git-friendly](https://github.com/jamiew/git-friendly)
+* [git-overwritten](https://github.com/mislav/dotfiles/blob/master/bin/git-overwritten)
+* [httpcompression](https://github.com/mathiasbynens/dotfiles/blob/master/bin/httpcompression)
 
+### `/setup`
+
+This is the home of the initial configuration setup files, and also includes various attempts I have made over the years to script the automation of making certain application setting changes. YMMV.
+
+As always I preach, OPEN THE FILE AND READ THE CODE before you blindly run someone else's shell file on your machine. :D
 
 ## License
 

@@ -54,11 +54,7 @@ fi
 # Update homebrew recipes
 brew update
 # Upgrade any already-installed formulae.
-brew upgrade --all
-
-# Tap some other kegs
-brew tap homebrew/dupes
-brew tap homebrew/versions
+brew upgrade
 
 # GNU core utilities (those that come with OS X are outdated)
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -79,10 +75,9 @@ brew install gnu-sed --with-default-names
 #   running `chsh`.
 brew install bash
 brew install bash-completion2
-brew install homebrew/completions/brew-cask-completion
+brew install brew-cask-completion
 
-# `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -92,95 +87,87 @@ brew install wget --with-iri
 
 # more recent versions of some OS X tools
 brew install vim --with-override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/screen
-brew install homebrew/dupes/tidy
-brew install homebrew/php/php56 --with-gmp
+brew install grep
+brew install screen
+# brew install tidy
+# brew install homebrew/php/php56 --with-gmp
 
 # The ongoing list of binaries that I'm into
-mybinaries=(
-    ack
-    ag                  # Code-search similar to ack
-    autoconf
-    autoenv
-    automake
-    brew-cask
-    composer
-    coreutils
-    csshx
-    dark-mode
-    diff-so-fancy
-    dos2unix            # Handy Dandy for working with files across platforms
-    doxygen
-    duti
-    faac
-    ffmpeg
-    flac
-    flow                # for sublimelinter-flow / js static type checker <http://flowtype.org/>
-    freetype
-    fzf                 # Fuzzy finder written in Go
-    gdbm
-    gcc
-    git
-    git-lfs
-    graphicsmagick
-    grep
-    gpg                 # GNU Privacy Guard: a free PGP replacement
-    htop-osx
-    hub
-    imagemagick
-    jpeg
-    jq                  # handy dandy cmd line json processor
-    lame
-    libgpg-error
-    libksba
-    libpng
-    libtool
-    libvo-aacenc
-    libyaml
-    mackup
-    mad
-    mercurial
-    mp3gain
-    mtr                 # mtr - ping & traceroute. best.
-    mvnvm
-    netpbm
-    nmap
-    node
-    openssl
-    pcre
-    # phantomjs
-    phpunit
-    pidcat              # colored logcats
-    pkg-config
-    python
-    readline
-    rename
-    sift                # sift is faster than grep, ack, or ag
-    shellcheck          # Static analysis and lint tool, for (ba)sh scripts
-    sox
-    sqlite
-    terminal-notifier
-    testssl             # Tool which checks for the support of TLS/SSL ciphers and flaws
-    thefuck
-    tidy-html5          # tidy > tidy-html5 <https://github.com/Homebrew/homebrew/pull/39010>
-    tig
-    trash
-    tree
-    vbindiff            # Visual Binary Diff tool
-    vcprompt
-    vorbisgain
-    webkit2png
-    wifi-password
-    x264
-    xvid
-    xz
-    z
-    zsh
-)
+brew install ack
+brew install ag                  # Code-search similar to ack
+brew install autoconf
+brew install autoenv
+brew install automake
+brew install coreutils
+brew install csshx
+brew install diff-so-fancy
+brew install dos2unix            # Handy Dandy for working with files across platforms
+brew install duti
+brew install faac
+brew install ffmpeg
+brew install flac
+brew install flow                # for sublimelinter-flow / js static type checker <http://flowtype.org/>
+brew install freetype
+brew install fzf                 # Fuzzy finder written in Go
+brew install gdbm
+brew install gcc
+brew install git
+brew install git-lfs
+brew install graphicsmagick
+brew install grep
+brew install gpg                 # GNU Privacy Guard: a free PGP replacement
+brew install htop-osx
+brew install hub
+brew install imagemagick
+brew install jpeg
+brew install jq                  # handy dandy cmd line json processor
+brew install lame
+brew install libgpg-error
+brew install libksba
+brew install libpng
+brew install libtool
+brew install libvo-aacenc
+brew install libyaml
+brew install mackup
+brew install mad
+brew install mercurial
+brew install mp3gain
+brew install mtr                 # mtr - ping & traceroute. best.
+brew install netpbm
+brew install nmap
+brew install node
+brew install openssl
+brew install pcre
+brew install phpunit
+brew install pidcat              # colored logcats
+brew install pkg-config
+brew install python
+brew install python3
+brew install readline
+brew install rename
+brew install sift                # sift is faster than grep, ack, or ag
+brew install shellcheck          # Static analysis and lint tool, for (ba)sh scripts
+brew install sox
+brew install sqlite
+brew install terminal-notifier
+brew install testssl             # Tool which checks for the support of TLS/SSL ciphers and flaws
+brew install thefuck
+brew install tidy-html5          # tidy > tidy-html5 <https://github.com/Homebrew/homebrew/pull/39010>
+brew install tig
+brew install trash
+brew install tree
+brew install vbindiff            # Visual Binary Diff tool
+brew install vcprompt
+brew install vorbisgain
+brew install webkit2png
+brew install wifi-password
+brew install x264
+brew install xvid
+brew install xz
+brew install z
 
-echo "Installing my brew binaries..."
-brew install ${mybinaries[@]}
+# echo "Installing my brew binaries..."
+# brew install ${mybinaries[@]}
 
 # Things with special configs or prerequisites fulfilled above
 # brew install casperjs --devel
@@ -212,18 +199,21 @@ fi
 chsh -s $BASHPATH # will set for current user only.
 echo $BASH && echo $BASH_VERSION # should be 4.x not the old 3.2.X
 
+# configure locate
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
 
 ##########################
 #   PHP things
 ##########################
 
-# For [SublimeLinter-PHPCodeSniffer](https://github.com/SublimeLinter/SublimeLinter-phpcs)
-pear install PHP_CodeSniffer
+# # For [SublimeLinter-PHPCodeSniffer](https://github.com/SublimeLinter/SublimeLinter-phpcs)
+# pear install PHP_CodeSniffer
 
-# For [SublimeLinter-phpmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
-pear channel-discover pear.phpmd.org
-pear channel-discover pear.pdepend.org
-pear install --alldeps phpmd/PHP_PMD
+# # For [SublimeLinter-phpmd](https://github.com/SublimeLinter/SublimeLinter-phpmd)
+# pear channel-discover pear.phpmd.org
+# pear channel-discover pear.pdepend.org
+# pear install --alldeps phpmd/PHP_PMD
 
 
 ##########################
@@ -235,31 +225,21 @@ pip install --upgrade setuptools
 pip install --upgrade pip
 
 # Some global packages I need
-mypys=(
-    virtualenv
-    virtualenvwrapper
-    pylint
-    python-nmap
-)
-
-echo "Installing my python things..."
-pip install ${mypys[@]}
+pip install virtualenv
+pip install pylint
+pip install python-nmap
 
 
 ##########################
 #   NPM things
 ##########################
 
-mynpms=(
-    diff-so-fancy
-    git-open
-    git-recent
-    trash-cli
-    npm-check
-)
+npm install -g diff-so-fancy
+npm install -g git-open
+npm install -g git-recent
+npm install -g trash-cli
+npm install -g npm-check
 
-echo "Installing my global npm packages..."
-npm install -g ${mynpms[@]}
 
 ##########################
 #   Ruby things
@@ -275,8 +255,9 @@ rvm install ruby-head; rvm use ruby-head --default
 ruby -v; which ruby
 
 mygems=(
-    scss-lint
+    scss_lint
     bundler
+    puppet-lint
 )
 
 echo "Installing my ruby gems..."
