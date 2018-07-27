@@ -30,7 +30,7 @@ alias code="cd ~/Code"
 alias dots="cd ~/Code/libs/dotfiles-project/dotfiles"
 alias sites="cd ~/Sites"
 alias tss="cd ~/Code/tss"
-alias nat="cd ~/Code/tss/git/nat2 && source env/bin/activate"
+alias nat="cd ~/Code/tss/natres3 && source env/bin/activate"
 
 # App Aliases
 alias g="git"
