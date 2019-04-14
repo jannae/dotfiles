@@ -162,3 +162,6 @@
 
 [stash]
     showPatch = true
+
+[log]
+    date = relative
