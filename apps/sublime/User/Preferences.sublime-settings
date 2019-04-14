@@ -33,12 +33,10 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 16.0,
+	"font_size": 15.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"SublimeLinter-contrib-puppet-lint",
-		"Vintage"
 	],
 	"indent_guide_options":
 	[
