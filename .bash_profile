@@ -81,11 +81,22 @@ for option in autocd globstar; do
 done;
 
 # Add tab completion for many Bash commands
-# bash-completion2 package caveat
-if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-    source $(brew --prefix)/share/bash-completion/bash_completion;
-elif [ -f /etc/bash_completion ]; then
-    source /etc/bash_completion;
+if  which brew > /dev/null; then
+
+    # bash completion.
+    if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+        source "$(brew --prefix)/share/bash-completion/bash_completion";
+    elif [ -f /etc/bash_completion ]; then
+        source /etc/bash_completion;
+    fi
+
+    # homebrew completion
+    source "$(brew --prefix)/etc/bash_completion.d/brew"
+
+    # hub completion
+    if  which hub > /dev/null; then
+        source "$(brew --prefix)/etc/bash_completion.d/hub.bash_completion.sh";
+    fi;
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
