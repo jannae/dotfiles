@@ -48,6 +48,8 @@
     # [default] trailing-space: looks for spaces at the end of a line
     # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
     whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+    newMoved = cyan
+    oldMoved = blue
 
     # Make `git rebase` safer on OS X
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
@@ -156,6 +158,10 @@
 
 [diff]
     compactionHeuristic = true
+
+    # Show blocks of moved text of at least 20 alphanumeric characters differently than adds/deletes
+    # https://blog.github.com/2018-04-05-git-217-released/
+    colorMoved = zebra
 
 [remote "origin"]
     fetch = +refs/heads/*:refs/remotes/origin/*
