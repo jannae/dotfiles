@@ -50,10 +50,10 @@ localcfg=( bin .bash_prompt .dircolors .eslintrc .exports .extra .functions \
 
 # Files I know mackup is already accounting for
 mackup=( .aws .aliases .bash_aliases .bash_login .bash_logout .bashrc \
-    .profile .bash_profile .fzf.bash .fzf.zsh .inputrc .chef .config .gemrc .git_template \
+    .bash_profile .fzf.bash .inputrc .config .gemrc .git_template \
     .gitconfig .gitattributes .gitconfig.local .gitignore_global .gvimrc \
-    .hgrc .hgignore_global .htoprc .i2csshrc .irssi .m2 .netrc .curlrc \
-    .pearrc .ssh .subversion .vim .vimrc .zlogin .zprofile .zshrc .gnupg )
+    .hgrc .hgignore_global .htoprc .i2csshrc .irssi .curlrc \
+    .pearrc .ssh .subversion .vim .vimrc .gnupg )
 
 # ALL THE THINGS
 allfiles=( "${ignore[@]}" "${localcfg[@]}" "${mackup[@]}" )
