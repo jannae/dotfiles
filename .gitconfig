@@ -161,9 +161,6 @@
     # https://blog.github.com/2018-04-05-git-217-released/
     colorMoved = zebra
 
-[remote "origin"]
-    fetch = +refs/heads/*:refs/remotes/origin/*
-
 [stash]
     showPatch = true
 
