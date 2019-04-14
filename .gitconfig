@@ -104,6 +104,7 @@
     # Include summaries of merged commits in newly created merge commit messages
     log = true
     tool = opendiff
+    renameLimit = 0
 
 [push]
     # push easily. http://stackoverflow.com/a/23918418/89484
@@ -155,3 +156,7 @@
 
 [diff]
     compactionHeuristic = true
+
+[remote "origin"]
+    fetch = +refs/heads/*:refs/remotes/origin/*
+
