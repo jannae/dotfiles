@@ -78,9 +78,6 @@ alias ll='ls -lah'
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
 
-# `cat` with beautiful colors. requires: sudo easy_install Pygments
-alias c='pygmentize -O style=monokai -f console256 -g'
-
 ###
 # GIT STUFF
 
