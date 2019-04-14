@@ -8,9 +8,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-### Added for QIS (may not need to keep this) 2013.12.01
-# export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
-
 # Added for Composer support
 # export PATH="$PATH:$HOME/.composer/vendor/bin"
 
