@@ -37,12 +37,19 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"RPM Spec Syntax",
+		"Splunk Conf File Syntax Highlighting",
+		"Splunk Format",
+		"Syntax Highlighting for PostCSS",
+		"Theme - Nil",
+		"Theme - Soda SolarizedDark"
 	],
 	"indent_guide_options":
 	[
 		"draw_normal",
 		"draw_active"
 	],
+	"index_files": false,
 	"line_numbers": true,
 	"rulers":
 	[

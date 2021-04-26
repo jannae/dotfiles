@@ -61,5 +61,5 @@ eval "$(gdircolors -b ~/.dircolors)"
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 # For Anaconda
-export PATH=/usr/local/anaconda3/bin:"$PATH"
+# export PATH=/usr/local/anaconda3/bin:"$PATH"
 
