@@ -8,6 +8,15 @@ Now, after years of cherry-picking adding/removing tools and tweaks from my worf
 
 Bits and pieces come from all over. Special thanks to the major players, @mathiasbynens, @paulirish, @paulmillr, @s10wen, and @sindresorhus.
 
+# DotBot
+
+https://github.com/anishathalye/dotbot
+
+
+
+
+# OLD DIRECTIONS will probably delete from here down
+
 ## Set Up Files.
 
 These run once, first thing, on a clean machine. I keep them maintained as I add/remove.
